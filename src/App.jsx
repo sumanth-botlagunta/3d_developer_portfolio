@@ -1,5 +1,28 @@
+import { BrowserRouter } from 'react-router-dom';
+import {
+  Navbar,
+  Hero,
+  About,
+  Contact,
+  Experience,
+  Feedbacks,
+  Loader,
+  Tech,
+  Works,
+  StarsCanvas,
+} from './components';
+
 const App = () => {
-  return <div className="App">3d Developer Portfolio</div>;
+  return (
+    <BrowserRouter>
+      <div className="relative z-0 bg-primary">
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center ">
+          <Navbar />
+          <Hero />
+        </div>
+      </div>
+    </BrowserRouter>
+  );
 };
 
 export default App;
